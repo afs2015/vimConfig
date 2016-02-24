@@ -22,10 +22,10 @@ set fileencoding=utf-8  " The encoding written to file.
 set nu
 
 " Flags Extraneous Whitespace
-au BufRead, BufnewFile *.py, *.c, *.h match BadWhiteSpace /\s\+$/
+au BufRead, BufNewFile *.py, *.c, *.h match BadWhiteSpace /\s\+$/
 
 " Use UNIX (\n) line endings.
-au BufNewFile *.py, *.c, *.h set fileformat=unix
+set ff=unix
 
 execute pathogen#infect()
 syntax enable
